@@ -1,0 +1,144 @@
+.upload_window{
+  position : absolute;
+  display: none;
+  flex-direction: column;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  background-color: #ffffff;
+  z-index: 3;
+  width: 450px;
+  height: 500px;
+  border:2px solid #000000;
+  border-radius:10px;
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+.utility_container{
+  width: 100%;
+  height:5%;
+  display:flex;
+  flex-direction: row;
+  border-bottom: #ffffff00;
+}
+
+.multiple_options_container_row{
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+  height:95%;
+  gap: 1px;
+}
+
+.multiple_options_container_column{
+  width: 100%;
+  height:90%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border:2px solid #000000;
+  border-radius:10px;
+  text-align: center;
+  background-color: rgb(255, 255, 255, 0.4);
+}
+
+.upload_container_wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    z-index: 3;
+    border:2px solid #ffffff00;
+    border-radius:10px;
+    background-color: rgb(255, 255, 255, 0.4);
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+.option{
+    display:flex;
+    flex-direction: column;
+    border: 2px solid #000000;
+    border-radius:10px;
+    background-color: rgb(255, 255, 255, 1);
+}
+
+.user_input_formular{
+  display:none;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255, 1);
+  text-align: center;
+}
+
+.step_progress_formular{
+  display:block;
+  flex-direction: column;
+}
+
+.server_output_container{
+  display:none;
+  overflow-y: auto;
+}
+
+.collection-name{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#database_form{
+    width: 100%;
+    height:90%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:1px;
+}
+
+.red-button{
+  background-color: rgba(211, 14, 14, 0.747);
+  color:white;
+}
+
+.green-button{
+  background-color: rgba(13, 209, 13, 0.671);
+  color:white;
+}
+
+#exit_button{
+    margin-left: 10px;
+}
+
+.button1 {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #6f36ff;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  grid-row: 4;
+}
+
+.button1:hover,
+.button1:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button1:active {
+  background: var(--color);
+  color: #fff;
+}

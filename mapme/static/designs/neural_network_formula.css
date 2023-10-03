@@ -1,0 +1,15 @@
+#upload_menu_container{
+    position : absolute;
+    display: none;
+    flex-direction: column;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: #ffffff;
+    z-index: 3;
+    width: 450px;
+    height: 250px;
+    border:2px solid #6f36ff;
+    border-radius:10px;
+    background-color: rgb(255, 255, 255, 0.5);
+}

@@ -1,0 +1,20 @@
+{% load static %}
+<div id="database_upload_container" class="upload_container_wrapper">
+    <h1>Database Connection</h1>
+    <div id="database_upload_form" class="upload_container">
+        <form method="post" id="database_form">
+            {% csrf_token %}
+            {{ database_upload_field }}
+            <button id="establish_database_connection_button" class="button1">Connect</button>
+        </form>
+    </div>
+</div>
+
+<div id = "database_tables_div" class = "instance_object_wrapper">
+    {% include 'mapme/database_info.html' %}
+</div>
+
+
+
+
+

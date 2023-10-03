@@ -1,0 +1,54 @@
+#widget_map{
+    background: #fff;
+    width: 150px;
+    height: 10%;
+    position:absolute;
+    top: 80%;
+    left: 50%;
+    border-radius:10px;
+    z-index: 2;
+    border:2px solid #ffffff;
+    padding:10px;
+    display: flex;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+
+.widget_content{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.widget_icon_button{
+    height: 50px;
+    width: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 5px solid #36ff72;
+    opacity:1;
+    
+}
+
+.widget_icon_button:hover{
+    border: 5px solid #36ffc3;
+    opacity:1;
+    
+}
+
+.widget_icon_borders ion-icon{
+    align-items: center;
+}
+
+.widget_menu_list li{
+    display: inline-block;
+    padding: 5px 20px;
+}
+
+
+.title {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
