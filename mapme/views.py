@@ -43,8 +43,8 @@ def initDatabaseConnection(request):
 
         try:
             db_connection = DatabaseUtils.establishDatabaseConnection(connection_params)
+            pdb.set_trace()
             if db_connection:
-                request.session['db_connection_params'] = connection_params
                 collection_info = DatabaseUtils.collectionInfo(connection_params,connection_params['database_name'])
                 db_connection.close()
                 return JsonResponse(collection_info, status = 200)
