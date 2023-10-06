@@ -18,3 +18,8 @@ To run the PixlMe server use the following command:
    ```
 
 This will launch the web application locally, and you can access it at http://localhost:8000/.
+
+Within the browser search
+   ```bash
+   http://127.0.0.1:8000/mapme/map/
+   ```
