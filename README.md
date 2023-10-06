@@ -23,3 +23,6 @@ Within the browser search
    ```bash
    http://127.0.0.1:8000/mapme/map/
    ```
+
+
+How do I get the data for measurements?
